@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.largeTitleDisplayMode = .never
         postCaptionTextView.text = post.caption.trimHTMLTags()
         
         if let photo = post.photos.first {

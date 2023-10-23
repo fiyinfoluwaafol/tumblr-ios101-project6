@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tumblr-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios101_project6_tumblr" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,7 +54,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KyA-ea-KFa"/>
+                    <navigationItem key="navigationItem" title="Tumblr" id="KyA-ea-KFa"/>
                     <connections>
                         <outlet property="tableView" destination="oPV-vN-fb6" id="bnX-QB-B66"/>
                     </connections>
@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="1061.8320610687022" y="3.5211267605633805"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Post Details-->
         <scene sceneID="jzU-Nm-KJd">
             <objects>
                 <viewController id="ekg-8n-hBG" customClass="DetailViewController" customModule="ios101_project6_tumblr" customModuleProvider="target" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                         <viewLayoutGuide key="safeArea" id="I9g-NI-MYQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5mP-lb-FUB"/>
+                    <navigationItem key="navigationItem" title="Post Details" id="5mP-lb-FUB"/>
                     <connections>
                         <outlet property="postCaptionTextView" destination="0gw-Bw-Aub" id="TRy-nd-bkJ"/>
                         <outlet property="postPhotoImageView" destination="dxb-vv-ynh" id="3Rb-lb-1Uj"/>

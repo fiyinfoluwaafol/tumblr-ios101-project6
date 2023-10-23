@@ -14,12 +14,21 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.prefersLargeTitles = true
         tableView.dataSource = self
         fetchPosts()
 
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
+        // get the index path for the selected row
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+
+            // Deselect the currently selected row
+            tableView.deselectRow(at: selectedIndexPath, animated: animated)
+        }
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the index path for the selected row.
         // `indexPathForSelectedRow` returns an optional `indexPath`, so we'll unwrap it with a guard.
